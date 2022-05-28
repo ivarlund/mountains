@@ -30,7 +30,7 @@ export default function countdownMaker() {
 
         return (
             <div>
-                <h1>ITALY T MINUS</h1>
+                <h1>Camping in T minus</h1>
                 {days + "d " + hours + "h "
                 + minutes + "m " + seconds + "s "}
             </div>
