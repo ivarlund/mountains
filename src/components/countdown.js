@@ -2,19 +2,13 @@ import React, {useState} from 'react';
 
 export default function countdownMaker() {
 
-
     return function () {
-        // const [count, setCount] = useState(new Date().getTime());
         const [days, setDays] = useState();
         const [hours, setHours] = useState();
         const [minutes, setMinutes] = useState();
         const [seconds, setSeconds] = useState();
 
-        const countDownDate = new Date("June 3, 2022 00:00:00").getTime();
-
-        // let distance = countDownDate - count;
-
-
+        const countDownDate = new Date("June 27, 2022 00:00:00").getTime();
 
         setInterval(function () {
 
@@ -25,14 +19,19 @@ export default function countdownMaker() {
             setMinutes(Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)));
             setSeconds(Math.floor((distance % (1000 * 60)) / 1000));
 
-
         }, 1000);
 
         return (
             <div>
-                <h1>Camping in T minus</h1>
-                {days + "d " + hours + "h "
-                + minutes + "m " + seconds + "s "}
+                <h1>Camping 2k22</h1>
+                <div className="counter">
+                    <ul>
+                        <li><span>{days}</span>days</li>
+                        <li><span>{hours}</span>Hours</li>
+                        <li><span>{minutes}</span>Minutes</li>
+                        <li><span>{seconds}</span>Seconds</li>
+                    </ul>
+                </div>
             </div>
         );
     }

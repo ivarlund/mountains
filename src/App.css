@@ -14,14 +14,22 @@
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #D8DEE9;
+  margin: 0 auto;
+  text-align: center;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  /*background-image: url("./images/fjallen.jpg");*/
+  background-color: #282c34;
+  background-image: url("./images/camp.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
 }
 
 .App-link {
@@ -34,5 +42,62 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+:root {
+  --smaller: .75;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+h1 {
+  font-weight: bold;
+  /*text-decoration: underline;*/
+  letter-spacing: .125rem;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+.counter {
+  box-shadow: 0px 0px 4px #3B4252;
+  border: 2px solid white;
+  /*background: #4C566A;*/
+}
+
+
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  li span {
+    font-size: calc(3.375rem * var(--smaller));
   }
 }
