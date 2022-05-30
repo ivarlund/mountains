@@ -13,36 +13,27 @@
   }
 }
 
-.App-header {
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #D8DEE9;
-  margin: 0 auto;
-  text-align: center;
+.text-shadow-base {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-  /*background-image: url("./images/fjallen.jpg");*/
-  background-color: #282c34;
-  background-image: url("./images/camp.png");
+}
+
+.mt--20 {
+  margin-top: -0.5vh;
+}
+
+.camp-bg {
+  /*background-color: #282c34;*/
+  background-image: url("images/camp.jpg");
   background-repeat: no-repeat;
-  background-position: center center;
+  /*background-position-x: 13%;*/
+  /*background-position-y: 10%;*/
+  /*background-position: center center;*/
   background-size: cover;
 }
 
+
 .App-link {
   color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
 
 :root {
@@ -61,43 +52,35 @@ html, body {
 }
 
 h1 {
-  font-weight: bold;
-  /*text-decoration: underline;*/
-  letter-spacing: .125rem;
-  text-transform: uppercase;
-  margin-bottom: 50px;
+  /*font-weight: bold;*/
+  /*!*text-decoration: underline;*!*/
+  /*letter-spacing: .125rem;*/
+  /*text-transform: uppercase;*/
+  /*margin-bottom: 50px;*/
 }
 
-li {
-  display: inline-block;
-  font-size: 1.5em;
+.countdown {
+  max-width: 600px;
+}
+
+.counter-item {
+  /*display: inline-block;*/
+  /*font-size: 180%;*/
   list-style-type: none;
-  padding: 1em;
-  text-transform: uppercase;
+  padding: 1em 1em;
+  /*text-transform: uppercase;*/
 }
 
-li span {
-  display: block;
-  font-size: 4.5rem;
-}
+@media all and (max-width: 650px) {
+  /*h1 {*/
+  /*  font-size: calc(1.5rem * var(--smaller));*/
+  /*}*/
 
-.counter {
-  box-shadow: 0px 0px 4px #3B4252;
-  border: 2px solid white;
-  /*background: #4C566A;*/
-}
-
-
-@media all and (max-width: 768px) {
-  h1 {
-    font-size: calc(1.5rem * var(--smaller));
+  .counter-item {
+    padding: 0.25em 0.25em;
   }
 
-  li {
-    font-size: calc(1.125rem * var(--smaller));
-  }
-
-  li span {
-    font-size: calc(3.375rem * var(--smaller));
-  }
+  /*li span {*/
+  /*  font-size: calc(3.375rem * var(--smaller));*/
+  /*}*/
 }
