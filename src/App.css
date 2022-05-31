@@ -1,86 +1,28 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .text-shadow-base {
   text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.mt--20 {
-  margin-top: -0.5vh;
 }
 
 .camp-bg {
   /*background-color: #282c34;*/
   background-image: url("images/camp.jpg");
   background-repeat: no-repeat;
-  /*background-position-x: 13%;*/
-  /*background-position-y: 10%;*/
-  /*background-position: center center;*/
+  /*background-position-x: 60%;*/
+  /*background-position-y: 50%;*/
+  background-position: center center;
   background-size: cover;
 }
 
-
-.App-link {
-  color: #61dafb;
-}
-
-:root {
-  --smaller: .75;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-html, body {
-  height: 100%;
-  margin: 0;
-}
-
-h1 {
-  /*font-weight: bold;*/
-  /*!*text-decoration: underline;*!*/
-  /*letter-spacing: .125rem;*/
-  /*text-transform: uppercase;*/
-  /*margin-bottom: 50px;*/
-}
-
-.countdown {
-  max-width: 600px;
+.navbar-color {
+  background: linear-gradient(170deg, rgba(49, 79, 57, 0.6) 0%, rgba(84,90,63,1) 46%, rgba(147,134,95,1) 80%);
 }
 
 .counter-item {
-  /*display: inline-block;*/
-  /*font-size: 180%;*/
-  list-style-type: none;
-  padding: 1em 1em;
-  /*text-transform: uppercase;*/
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media all and (max-width: 650px) {
-  /*h1 {*/
-  /*  font-size: calc(1.5rem * var(--smaller));*/
-  /*}*/
-
   .counter-item {
-    padding: 0.25em 0.25em;
+    padding: 5px 5px;
   }
-
-  /*li span {*/
-  /*  font-size: calc(3.375rem * var(--smaller));*/
-  /*}*/
 }

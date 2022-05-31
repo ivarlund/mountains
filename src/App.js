@@ -10,9 +10,9 @@ function App() {
     const Footer = footerMaker();
 
     return (
-        <div className="vh-100 d-flex justify-content-between flex-column">
+        <div className="camp-bg vh-100 d-flex justify-content-between flex-column">
             <NavBar/>
-            <div className="pt-5 camp-bg d-flex flex-grow-1 align-items-md-start
+            <div className="d-flex flex-grow-1 align-items-md-start
         justify-content-center m-0 text-center text-shadow-base">
                 <CountDown/>
             </div>

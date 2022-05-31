@@ -23,8 +23,8 @@ export default function countdownMaker() {
 
         return (
             <div className="mt-5 pt-5">
-                <div className="rounded rounded-3 border border-1 border-light shadow text-light mt-5 d-flex p-2" style={{backgroundColor: 'RGB(50, 54, 51, 0.4)'}}>
-                    <div className="d-flex flex-column align-items-center justify-content-center px-2">
+                <div className="rounded rounded-3 border border-1 border-light shadow text-light d-flex p-2" style={{backgroundColor: 'RGB(50, 54, 51, 0.4)', marginTop: '250px'}}>
+                    <div className="d-flex flex-column align-items-center justify-content-center counter-item">
                         <div className="display-6 mb-0 fw-bold">
                             D
                         </div>
@@ -32,7 +32,7 @@ export default function countdownMaker() {
                             {days}
                         </div>
                     </div>
-                    <div className="d-flex flex-column align-items-center justify-content-center px-2">
+                    <div className="d-flex flex-column align-items-center justify-content-center counter-item">
                         <div className="display-6 mb-0 fw-bold">
                             H
                         </div>
@@ -40,7 +40,7 @@ export default function countdownMaker() {
                             {hours}
                         </div>
                     </div>
-                    <div className="d-flex flex-column align-items-center justify-content-center px-2">
+                    <div className="d-flex flex-column align-items-center justify-content-center counter-item">
                         <div className="display-6 mb-0 fw-bold">
                             M
                         </div>
@@ -48,7 +48,7 @@ export default function countdownMaker() {
                             {minutes}
                         </div>
                     </div>
-                    <div className="d-flex flex-column align-items-center justify-content-center px-2">
+                    <div className="d-flex flex-column align-items-center justify-content-center counter-item">
                         <div className="display-6 mb-0 fw-bold">
                             S
                         </div>
@@ -56,24 +56,6 @@ export default function countdownMaker() {
                             {seconds}
                         </div>
                     </div>
-                    {/*<ul>*/}
-                    {/*    <li className="d-inline-block text-uppercase">*/}
-                    {/*        <span className="display-4 counter-item d-block fw-bold">{days}</span>*/}
-                    {/*        <span className="h3 d-block counter-item">Days</span>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="d-inline-block text-uppercase">*/}
-                    {/*        <span className="display-4 counter-item d-block fw-bold">{hours}</span>*/}
-                    {/*        <span className="h3 d-block counter-item">Hours</span>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="d-inline-block text-uppercase">*/}
-                    {/*        <span className="display-4 counter-item d-block fw-bold">{minutes}</span>*/}
-                    {/*        <span className="h3 d-block counter-item">Minutes</span>*/}
-                    {/*    </li>*/}
-                    {/*    <li className="d-inline-block text-uppercase">*/}
-                    {/*        <span className="display-4 counter-item d-block fw-bold">{seconds}</span>*/}
-                    {/*        <span className="h3 d-block counter-item">Seconds</span>*/}
-                    {/*    </li>*/}
-                    {/*</ul>*/}
                 </div>
             </div>
         );
