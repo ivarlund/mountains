@@ -8,7 +8,7 @@ export default function countdownMaker() {
         const [minutes, setMinutes] = useState();
         const [seconds, setSeconds] = useState();
 
-        const countDownDate = new Date("June 27, 2022 00:00:00").getTime();
+        const countDownDate = new Date("July 24, 2023 00:00:00").getTime();
 
         setInterval(function () {
 
